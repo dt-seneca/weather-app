@@ -4,8 +4,20 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Weather App</title>
+        <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        <h1>Weather App</h1>
+        <header>
+            <h1>Weather App</h1>
+        </header>
+        <main>
+            <form method="get">
+                <div id="inputArea">
+                    <input id="locationInput" autofocus type='text' required placeholder=" Search by city, zipcode" name='area' />
+                    <span id="clearButton">&#10005</span>
+                </div>
+            </form>
+        </main>
+        <script src="scripts/main.js"></script>
     </body>
 </html>
