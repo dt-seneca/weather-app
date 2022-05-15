@@ -11,7 +11,7 @@ app.set('views', pathToViews);
 app.use(express.static(pathToPublic));
 
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index', {city: 'Saratov'});
 })
 
 app.listen(3000, ()=>{
